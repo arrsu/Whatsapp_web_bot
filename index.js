@@ -11,24 +11,11 @@ client.on('ready', () => {
     console.log('Client is ready!');
 });
 
-//client.on('message', message => {
-//	if(message.body === '!ping') {
-//		message.reply('pong');
-//	}
-//});
-
-
-//client.on('message', message => {
-//    if(message.body === 'Hi') {
-//        message.reply('hlo');
-//    } else {
-//        message.reply('Buddhu');
-//    }
-//});
-
 client.on('message', message => {
 	if(message.body === 'hii') {
-		  message.reply('Yup');
+		  message.reply('yup');
+	} else if (message.body === 'Good Morning') {
+		message.reply('Have a nice day.');
     } else {
           message.reply('Bolo na');
     }
